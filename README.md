@@ -1,1 +1,1 @@
-# Yolo_v5
+# Activity Detection Pipeline with Yolo v5
