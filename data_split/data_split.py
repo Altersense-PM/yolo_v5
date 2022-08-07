@@ -1,24 +1,24 @@
-# data move 
+# # data move 
 
-import os
-import shutil
-sourcepath='annoted_car_data'
-sourcefiles = os.listdir(sourcepath)
-# sourcepath2='anpr_data\\train'
-# sourcefiles2 = os.listdir(sourcepath2)
+# import os
+# import shutil
+# sourcepath='Banpr_data2/train/train'
+# sourcefiles = os.listdir(sourcepath)
+# # sourcepath2='anpr_data\\train'
+# # sourcefiles2 = os.listdir(sourcepath2)
 
-destinationpath = 'car_labels'
-for file in sourcefiles:
-    # for file2 in sourcefiles2:
-    #     if file!=file2:
-            if file.endswith('.txt'):
-                shutil.move(os.path.join(sourcepath,file), os.path.join(destinationpath,file))
+# destinationpath = 'trash'
+# for file in sourcefiles:
+#     # for file2 in sourcefiles2:
+#     #     if file!=file2:
+#             if file.endswith('.xml'):
+#                 shutil.move(os.path.join(sourcepath,file), os.path.join(destinationpath,file))
 
 
 
 # import os
 # import shutil
-# sourcepath='anpr_data\\ts\images\\val'
+# sourcepath='Banpr_data2/test/test'
 # sourcefiles = os.listdir(sourcepath)
 # # destinationpath = 'anpr_data\\images\\val'
 # file1 = open("test.txt","w")#write mode
@@ -27,69 +27,69 @@ for file in sourcefiles:
 #         file1.write("data/ts/"+file+'\n')
 #         # file1.close()
 
-# # rename files
+# rename files
 
-# import os
-# from os import path
-# import shutil
+import os
+from os import path
+import shutil
 
-# Source_Path = 'json2yolo_input\\sewing'
-# Destination = 'json2yolo_input\\sewing'
-# Source_Path2 = 'output'
-# Destination2 = 'output'
+Source_Path = 'json2yolo_input\\sewing'
+Destination = 'json2yolo_input\\sewing'
+Source_Path2 = 'output'
+Destination2 = 'output'
 
-# # Source_Path3 = 'input\\New folder (2)\\not taken_organized\\frames_25-04-2022_12_25_39_trackID=32\\image'   
-# # Destination3 = 'input\\New folder (2)\\not taken_organized\\frames_25-04-2022_12_25_39_trackID=32\\image'
-# # Source_Path4 = 'input\\New folder (2)\\not taken_organized\\frames_25-04-2022_12_25_39_trackID=32\\label'
-# # Destination4 = 'input\\New folder (2)\\not taken_organized\\frames_25-04-2022_12_25_39_trackID=32\\label'
-# # dst_folder = os.mkdir(Destination)
+# Source_Path3 = 'input\\New folder (2)\\not taken_organized\\frames_25-04-2022_12_25_39_trackID=32\\image'   
+# Destination3 = 'input\\New folder (2)\\not taken_organized\\frames_25-04-2022_12_25_39_trackID=32\\image'
+# Source_Path4 = 'input\\New folder (2)\\not taken_organized\\frames_25-04-2022_12_25_39_trackID=32\\label'
+# Destination4 = 'input\\New folder (2)\\not taken_organized\\frames_25-04-2022_12_25_39_trackID=32\\label'
+# dst_folder = os.mkdir(Destination)
 
 
-# def main():
-#     for count, filename in enumerate(os.listdir(Source_Path)):
-#         jjj=filename.split('.')[0]
-#         # jjj=filename.split('\\')[1]
-#         # print(jjj)
+def main():
+    for count, filename in enumerate(os.listdir(Source_Path)):
+        jjj=filename.split('.')[0]
+        # jjj=filename.split('\\')[1]
+        # print(jjj)
     
-#         dst = "sw_"+str(count) + ".png"
-#         os.rename(os.path.join(Source_Path, filename),  os.path.join(Destination, dst))
+        dst = "sw_"+str(count) + ".png"
+        os.rename(os.path.join(Source_Path, filename),  os.path.join(Destination, dst))
 
-#     for count, filename2 in enumerate(os.listdir(Source_Path2)):
-#         # # rename all the files
+    for count, filename2 in enumerate(os.listdir(Source_Path2)):
+        # # rename all the files
         
-#         jj=filename2.split('.')[0]
-#         # jjj=filename.split('\\')[1]
-#         # print(jjj)
+        jj=filename2.split('.')[0]
+        # jjj=filename.split('\\')[1]
+        # print(jjj)
     
-#         dst2 = "sw_"+str(count) + ".txt"
+        dst2 = "sw_"+str(count) + ".txt"
 
-#         # # rename all the files
-#         os.rename(os.path.join(Source_Path2, filename2),  os.path.join(Destination2, dst2))
+        # # rename all the files
+        os.rename(os.path.join(Source_Path2, filename2),  os.path.join(Destination2, dst2))
 
-    # for count, filename3 in enumerate(os.listdir(Source_Path3)):
-    #     jjj=filename3.split('.')[0]
-    #     # jjj=filename.split('\\')[1]
-    #     # print(jjj)
+    for count, filename3 in enumerate(os.listdir(Source_Path3)):
+        jjj=filename3.split('.')[0]
+        # jjj=filename.split('\\')[1]
+        # print(jjj)
     
-    #     dst3 = "abir47_"+jjj + ".jpeg"
-    #     os.rename(os.path.join(Source_Path3, filename3),  os.path.join(Destination3, dst3))
+        dst3 = "abir47_"+jjj + ".jpeg"
+        os.rename(os.path.join(Source_Path3, filename3),  os.path.join(Destination3, dst3))
 
-    # for count, filename4 in enumerate(os.listdir(Source_Path4)):
-    #     # # rename all the files
+    for count, filename4 in enumerate(os.listdir(Source_Path4)):
+        # # rename all the files
         
-    #     jj=filename4.split('.')[0]
-    #     # jjj=filename.split('\\')[1]
-    #     # print(jjj)
+        jj=filename4.split('.')[0]
+        # jjj=filename.split('\\')[1]
+        # print(jjj)
     
-    #     dst4 = "abir47_"+jj + ".txt"
+        dst4 = "abir47_"+jj + ".txt"
 
-    #     # # rename all the files
-    #     os.rename(os.path.join(Source_Path4, filename4),  os.path.join(Destination4, dst4))
+        # # rename all the files
+        os.rename(os.path.join(Source_Path4, filename4),  os.path.join(Destination4, dst4))
 
 
-# # Driver Code
-# if __name__ == '__main__':
-#     main()
+# Driver Code
+if __name__ == '__main__':
+    main()
 
 
 # # jpg to png
@@ -174,6 +174,9 @@ for file in sourcefiles:
 #             if file.endswith('.txt'):
 #                 shutil.move(os.path.join(sourcepath,file), os.path.join(destinationpath,file))
 
+
+#move .txt amd image files
+
 # import os
 # from collections import defaultdict
 # import shutil
@@ -202,6 +205,43 @@ for file in sourcefiles:
 #                         count+=1
 #                         shutil.move(file.name, 'annoted_car_data')
 # print("\ntotal files moved:",count)
+
+
+#remove contents of .txt file other than LP
+
+# # Import Module
+# import os
+  
+# # Folder Path
+# path = "/home/faisal/Helios/data/10000_data_acmeai/car_labels"
+  
+# # Change the directory
+# os.chdir(path)
+  
+# # Read text File 
+# def read_text_file(file_path):
+#     with open(file_path, 'r') as f:
+#         x=f.read()
+#         return x
+  
+# # iterate through all file
+# for file in os.listdir():
+#     # Check whether file is in text format or not
+#     if file.endswith(".txt"):
+#         file_path = f"{path}/{file}"
+#         file_name=file_path.split("/")[-1]
+#         print(file_name)
+#         values=open(file_path,"r")
+#         x = values.split('\n', 1)[0]
+#         if (x.endswith(",LP,")):
+#             remove_last=(x[:-1])
+#             print(remove_last)
+#             file_write = open(file_path,"w") #write files
+#             file_write.write(remove_last)
+
+
+
+
         
 
 
