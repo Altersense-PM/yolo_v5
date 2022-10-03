@@ -18,4 +18,4 @@ Follow the below steps:
 - Step 1: Download Activity model 
 - Step 2: Dump the model into model/weight folder
 
-#### Orginal github directory <a href="https://github.com/ultralytics/yolov5/">Yolov5 | PyTorch</a> 
+#### Orginal github directory: <a href="https://github.com/ultralytics/yolov5/">Yolov5 | PyTorch</a> 
