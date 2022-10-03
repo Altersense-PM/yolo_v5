@@ -1,9 +1,6 @@
 # Python Scripts
 
 
-
-
-
 - Convert image to grey
 
 - Move data from one directory to another
