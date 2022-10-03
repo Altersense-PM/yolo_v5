@@ -18,5 +18,5 @@ Follow the below steps:
 - Step 1: Download Activity model 
 - Step 2: Dump the model into model/weight folder
 
-
+####Orginal github directory: https://github.com/ultralytics/yolov5 
 
