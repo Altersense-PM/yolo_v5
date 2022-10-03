@@ -12,7 +12,8 @@ Now, Follow the below steps:
 
 --------------------------------------------------------------------------
 
-###  Activity
+###  Activity Detection
+
 #### Getting Started
 Follow the below steps:
 
