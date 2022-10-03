@@ -2,7 +2,7 @@
 
 # import os
 # import shutil
-# sourcepath='Banpr_data2/train/train'
+# sourcepath='/home/faisal/Downloads/Banpr_data1/bangla_license_plate_synth'
 # sourcefiles = os.listdir(sourcepath)
 # # sourcepath2='anpr_data\\train'
 # # sourcefiles2 = os.listdir(sourcepath2)
@@ -11,7 +11,7 @@
 # for file in sourcefiles:
 #     # for file2 in sourcefiles2:
 #     #     if file!=file2:
-#             if file.endswith('.xml'):
+#             if file.endswith('.jpg'):
 #                 shutil.move(os.path.join(sourcepath,file), os.path.join(destinationpath,file))
 
 
@@ -27,16 +27,16 @@
 #         file1.write("data/ts/"+file+'\n')
 #         # file1.close()
 
-# rename files
+# # rename files
 
-import os
-from os import path
-import shutil
+# import os
+# from os import path
+# import shutil
 
-Source_Path = 'json2yolo_input\\sewing'
-Destination = 'json2yolo_input\\sewing'
-Source_Path2 = 'output'
-Destination2 = 'output'
+# Source_Path = 'json2yolo_input\\sewing'
+# Destination = 'json2yolo_input\\sewing'
+# Source_Path2 = 'output'
+# Destination2 = 'output'
 
 # Source_Path3 = 'input\\New folder (2)\\not taken_organized\\frames_25-04-2022_12_25_39_trackID=32\\image'   
 # Destination3 = 'input\\New folder (2)\\not taken_organized\\frames_25-04-2022_12_25_39_trackID=32\\image'
@@ -45,51 +45,51 @@ Destination2 = 'output'
 # dst_folder = os.mkdir(Destination)
 
 
-def main():
-    for count, filename in enumerate(os.listdir(Source_Path)):
-        jjj=filename.split('.')[0]
-        # jjj=filename.split('\\')[1]
-        # print(jjj)
+# def main():
+#     for count, filename in enumerate(os.listdir(Source_Path)):
+#         jjj=filename.split('.')[0]
+#         # jjj=filename.split('\\')[1]
+#         # print(jjj)
     
-        dst = "sw_"+str(count) + ".png"
-        os.rename(os.path.join(Source_Path, filename),  os.path.join(Destination, dst))
+#         dst = "sw_"+str(count) + ".png"
+#         os.rename(os.path.join(Source_Path, filename),  os.path.join(Destination, dst))
 
-    for count, filename2 in enumerate(os.listdir(Source_Path2)):
-        # # rename all the files
+#     for count, filename2 in enumerate(os.listdir(Source_Path2)):
+#         # # rename all the files
         
-        jj=filename2.split('.')[0]
-        # jjj=filename.split('\\')[1]
-        # print(jjj)
+#         jj=filename2.split('.')[0]
+#         # jjj=filename.split('\\')[1]
+#         # print(jjj)
     
-        dst2 = "sw_"+str(count) + ".txt"
+#         dst2 = "sw_"+str(count) + ".txt"
 
-        # # rename all the files
-        os.rename(os.path.join(Source_Path2, filename2),  os.path.join(Destination2, dst2))
+#         # # rename all the files
+#         os.rename(os.path.join(Source_Path2, filename2),  os.path.join(Destination2, dst2))
 
-    for count, filename3 in enumerate(os.listdir(Source_Path3)):
-        jjj=filename3.split('.')[0]
-        # jjj=filename.split('\\')[1]
-        # print(jjj)
+#     for count, filename3 in enumerate(os.listdir(Source_Path3)):
+#         jjj=filename3.split('.')[0]
+#         # jjj=filename.split('\\')[1]
+#         # print(jjj)
     
-        dst3 = "abir47_"+jjj + ".jpeg"
-        os.rename(os.path.join(Source_Path3, filename3),  os.path.join(Destination3, dst3))
+#         dst3 = "abir47_"+jjj + ".jpeg"
+#         os.rename(os.path.join(Source_Path3, filename3),  os.path.join(Destination3, dst3))
 
-    for count, filename4 in enumerate(os.listdir(Source_Path4)):
-        # # rename all the files
+#     for count, filename4 in enumerate(os.listdir(Source_Path4)):
+#         # # rename all the files
         
-        jj=filename4.split('.')[0]
-        # jjj=filename.split('\\')[1]
-        # print(jjj)
+#         jj=filename4.split('.')[0]
+#         # jjj=filename.split('\\')[1]
+#         # print(jjj)
     
-        dst4 = "abir47_"+jj + ".txt"
+#         dst4 = "abir47_"+jj + ".txt"
 
-        # # rename all the files
-        os.rename(os.path.join(Source_Path4, filename4),  os.path.join(Destination4, dst4))
+#         # # rename all the files
+#         os.rename(os.path.join(Source_Path4, filename4),  os.path.join(Destination4, dst4))
 
 
-# Driver Code
-if __name__ == '__main__':
-    main()
+# # Driver Code
+# if __name__ == '__main__':
+#     main()
 
 
 # # jpg to png
@@ -241,6 +241,19 @@ if __name__ == '__main__':
 
 
 
+# # data move while checking the length of file name 
+
+# import os
+# import shutil
+# sourcepath='/home/faisal/Downloads/Banpr_data1/bangla_license_plate_synth'
+# sourcefiles = os.listdir(sourcepath)
+
+# destinationpath = '/home/faisal/Downloads/trash'
+# for file in sourcefiles:
+#     if file.endswith('.jpg'):
+#         print((file))
+#         if(len(file)<11):
+#             shutil.move(os.path.join(sourcepath,file), os.path.join(destinationpath,file))
 
         
 
