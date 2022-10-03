@@ -12,9 +12,7 @@ Now, Follow the below steps:
 
 --------------------------------------------------------------------------
 
-###  Activity Detection
-
-#### Getting Started
+### Getting Started
 Follow the below steps:
 
 - Step 1: Download Activity model 
