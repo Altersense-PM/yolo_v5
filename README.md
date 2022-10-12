@@ -17,6 +17,6 @@ Follow the below steps:
 
 - Step 1: Download Activity model 
 - Step 2: Dump the model into model/weight folder
-- Step 3: Run detect_sense.py
+- Step 3: Run detect_sense.py from v5 folder
 
 #### Orginal github directory: <a href="https://github.com/ultralytics/yolov5/">Yolov5 | PyTorch</a> 
